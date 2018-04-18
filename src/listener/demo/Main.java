@@ -7,14 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        IEventListener listener = event -> {
-            if(event instanceof ButtonEventSource){
-                System.out.println("您点击了button！");
-            }else if (event instanceof MouseEventSource){
-                System.out.println("您移动了鼠标！");
-            }
-
-        };
+        IEventListener listener = new IEventListenerImpl();
 
         ButtonEventSource buttonEventSource = new ButtonEventSource();
         buttonEventSource.setEventListener(listener);

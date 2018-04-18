@@ -25,7 +25,7 @@ public class ListenerManager {
         listeners.remove(listener);
     }
 
-    //打开开关
+
 
     public void doEvent(String event) {
         if (listeners==null) return;
