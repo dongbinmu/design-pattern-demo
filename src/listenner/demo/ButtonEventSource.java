@@ -3,7 +3,7 @@ package listenner.demo;
 /**
  * Created by dongbin on 2018/4/18.
  */
-public class ButtonEventSource extends AbstractIEvent {
+public class ButtonEventSource implements IEvent {
 
     private IEventListener listener;
 
