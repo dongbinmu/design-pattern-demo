@@ -17,12 +17,12 @@ public class ObserverImpl implements Observer {
     }
 
     @Override
-    public void doSomething() {
+    public void receive() {
         System.out.println(this.name+"收到通知！");
     }
 
     @Override
-    public void invoke(Subject subject) {
+    public void send(Subject subject) {
         System.out.println(this.name+"发送通知");
         subject.notifyObservers(this.name);
     }

@@ -13,7 +13,7 @@ public class Main {
         subject.addObserver(observer2);
         subject.addObserver(observer3);
 
-        observer1.invoke(subject);
+        observer1.send(subject);
 
     }
 }

@@ -19,10 +19,12 @@ public abstract class Subject {
     }
 
     public void addObserver(Observer observer) {
+        System.out.println(observer.getName()+"加入了观察组");
         observers.add(observer);
     }
 
     public void removeObserver(Observer observer) {
+        System.out.println(observer.getName()+"离开了观察组");
         observers.remove(observer);
     }
 

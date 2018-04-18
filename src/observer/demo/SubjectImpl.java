@@ -13,7 +13,7 @@ public class SubjectImpl extends Subject {
         while (iterator.hasNext()) {
             Observer observer = (Observer) iterator.next();
             if (!name.equalsIgnoreCase(observer.getName())) {
-                observer.doSomething();
+                observer.receive();
             }
         }
     }

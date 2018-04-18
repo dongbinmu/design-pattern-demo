@@ -7,10 +7,10 @@ public interface Observer {
 
     String getName();
 
-    //申明相应方法
-    void doSomething();
+    //
+    void receive();
 
     //调用
 
-    void invoke(Subject subject);
+    void send(Subject subject);
 }
